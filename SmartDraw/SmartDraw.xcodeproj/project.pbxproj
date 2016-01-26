@@ -1,0 +1,360 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		593258F61AB4D28400718B6E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 593258F51AB4D28400718B6E /* Images.xcassets */; };
+		594F230F1C58297000D66616 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 594F230E1C58297000D66616 /* opencv2.framework */; };
+		5956DD3419D7C46B0060A784 /* svm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5956DD3319D7C46B0060A784 /* svm.cpp */; };
+		597743ED1A1337390078A19A /* JCViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 597743EB1A1337390078A19A /* JCViewController.xib */; };
+		59CB92261A19854600E9F399 /* HoG.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 59CB92251A19854600E9F399 /* HoG.cpp */; };
+		59EAB0701ABD486100B245B6 /* cols_to_remove.txt in Resources */ = {isa = PBXBuildFile; fileRef = 59EAB06D1ABD486100B245B6 /* cols_to_remove.txt */; };
+		59EAB0711ABD486100B245B6 /* model.model in Resources */ = {isa = PBXBuildFile; fileRef = 59EAB06E1ABD486100B245B6 /* model.model */; };
+		59EAB0721ABD486100B245B6 /* norm_params.txt in Resources */ = {isa = PBXBuildFile; fileRef = 59EAB06F1ABD486100B245B6 /* norm_params.txt */; };
+		DB48418214EE587900342F2A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB48418114EE587900342F2A /* UIKit.framework */; };
+		DB48418414EE587900342F2A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB48418314EE587900342F2A /* Foundation.framework */; };
+		DB48418614EE587900342F2A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB48418514EE587900342F2A /* CoreGraphics.framework */; };
+		DB48418C14EE587900342F2A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DB48418A14EE587900342F2A /* InfoPlist.strings */; };
+		DB48418E14EE587900342F2A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DB48418D14EE587900342F2A /* main.m */; };
+		DB48419214EE587900342F2A /* JCAppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = DB48419114EE587900342F2A /* JCAppDelegate.mm */; };
+		DB4841A414EE58C200342F2A /* JCDrawView.mm in Sources */ = {isa = PBXBuildFile; fileRef = DB4841A314EE58C200342F2A /* JCDrawView.mm */; };
+		DB4841A714EE598700342F2A /* JCViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = DB4841A614EE598700342F2A /* JCViewController.mm */; };
+		DD7736571997E571005C70BC /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DD7736561997E571005C70BC /* libc++.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		593258F51AB4D28400718B6E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = SmartDraw/Images.xcassets; sourceTree = "<group>"; };
+		594F230E1C58297000D66616 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
+		5956DD3319D7C46B0060A784 /* svm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = svm.cpp; sourceTree = "<group>"; };
+		5956DD3519D7C47B0060A784 /* svm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = svm.h; sourceTree = "<group>"; };
+		597743EC1A1337390078A19A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/JCViewController.xib; sourceTree = "<group>"; };
+		59CB92251A19854600E9F399 /* HoG.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HoG.cpp; sourceTree = "<group>"; };
+		59CB92271A198B4900E9F399 /* HoG.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HoG.h; sourceTree = "<group>"; };
+		59EAB06D1ABD486100B245B6 /* cols_to_remove.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cols_to_remove.txt; sourceTree = "<group>"; };
+		59EAB06E1ABD486100B245B6 /* model.model */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = model.model; sourceTree = "<group>"; };
+		59EAB06F1ABD486100B245B6 /* norm_params.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = norm_params.txt; sourceTree = "<group>"; };
+		DB48417D14EE587900342F2A /* SmartDraw.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartDraw.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB48418114EE587900342F2A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DB48418314EE587900342F2A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DB48418514EE587900342F2A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DB48418B14EE587900342F2A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DB48418D14EE587900342F2A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DB48418F14EE587900342F2A /* SmartDraw-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SmartDraw-Prefix.pch"; sourceTree = "<group>"; };
+		DB48419014EE587900342F2A /* JCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCAppDelegate.h; sourceTree = "<group>"; };
+		DB48419114EE587900342F2A /* JCAppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = JCAppDelegate.mm; sourceTree = "<group>"; };
+		DB4841A214EE58C200342F2A /* JCDrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCDrawView.h; sourceTree = "<group>"; };
+		DB4841A314EE58C200342F2A /* JCDrawView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = JCDrawView.mm; sourceTree = "<group>"; };
+		DB4841A514EE598600342F2A /* JCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCViewController.h; sourceTree = "<group>"; };
+		DB4841A614EE598700342F2A /* JCViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = JCViewController.mm; sourceTree = "<group>"; };
+		DD7736561997E571005C70BC /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DB48417A14EE587900342F2A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				594F230F1C58297000D66616 /* opencv2.framework in Frameworks */,
+				DD7736571997E571005C70BC /* libc++.dylib in Frameworks */,
+				DB48418214EE587900342F2A /* UIKit.framework in Frameworks */,
+				DB48418414EE587900342F2A /* Foundation.framework in Frameworks */,
+				DB48418614EE587900342F2A /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DB48417214EE587800342F2A = {
+			isa = PBXGroup;
+			children = (
+				593258F51AB4D28400718B6E /* Images.xcassets */,
+				DB48418714EE587900342F2A /* simplePaint */,
+				DB48418014EE587900342F2A /* Frameworks */,
+				DB48417E14EE587900342F2A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DB48417E14EE587900342F2A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DB48417D14EE587900342F2A /* SmartDraw.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DB48418014EE587900342F2A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DD7736561997E571005C70BC /* libc++.dylib */,
+				594F230E1C58297000D66616 /* opencv2.framework */,
+				DB48418114EE587900342F2A /* UIKit.framework */,
+				DB48418314EE587900342F2A /* Foundation.framework */,
+				DB48418514EE587900342F2A /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DB48418714EE587900342F2A /* simplePaint */ = {
+			isa = PBXGroup;
+			children = (
+				5956DD3519D7C47B0060A784 /* svm.h */,
+				5956DD3319D7C46B0060A784 /* svm.cpp */,
+				59CB92271A198B4900E9F399 /* HoG.h */,
+				59CB92251A19854600E9F399 /* HoG.cpp */,
+				DB48419014EE587900342F2A /* JCAppDelegate.h */,
+				DB48419114EE587900342F2A /* JCAppDelegate.mm */,
+				DB4841A214EE58C200342F2A /* JCDrawView.h */,
+				DB4841A314EE58C200342F2A /* JCDrawView.mm */,
+				DB4841A514EE598600342F2A /* JCViewController.h */,
+				DB4841A614EE598700342F2A /* JCViewController.mm */,
+				597743EB1A1337390078A19A /* JCViewController.xib */,
+				DB48418814EE587900342F2A /* Supporting Files */,
+			);
+			path = simplePaint;
+			sourceTree = "<group>";
+		};
+		DB48418814EE587900342F2A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				59EAB06D1ABD486100B245B6 /* cols_to_remove.txt */,
+				59EAB06E1ABD486100B245B6 /* model.model */,
+				59EAB06F1ABD486100B245B6 /* norm_params.txt */,
+				DB48418A14EE587900342F2A /* InfoPlist.strings */,
+				DB48418D14EE587900342F2A /* main.m */,
+				DB48418F14EE587900342F2A /* SmartDraw-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DB48417C14EE587900342F2A /* SmartDraw */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB48419B14EE587900342F2A /* Build configuration list for PBXNativeTarget "SmartDraw" */;
+			buildPhases = (
+				DB48417914EE587900342F2A /* Sources */,
+				DB48417A14EE587900342F2A /* Frameworks */,
+				DB48417B14EE587900342F2A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SmartDraw;
+			productName = simplePaint;
+			productReference = DB48417D14EE587900342F2A /* SmartDraw.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DB48417414EE587800342F2A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "Neraj Bobra";
+				TargetAttributes = {
+					DB48417C14EE587900342F2A = {
+						DevelopmentTeam = RVV5Z5CX98;
+					};
+				};
+			};
+			buildConfigurationList = DB48417714EE587800342F2A /* Build configuration list for PBXProject "SmartDraw" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DB48417214EE587800342F2A;
+			productRefGroup = DB48417E14EE587900342F2A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DB48417C14EE587900342F2A /* SmartDraw */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DB48417B14EE587900342F2A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59EAB0711ABD486100B245B6 /* model.model in Resources */,
+				59EAB0701ABD486100B245B6 /* cols_to_remove.txt in Resources */,
+				59EAB0721ABD486100B245B6 /* norm_params.txt in Resources */,
+				DB48418C14EE587900342F2A /* InfoPlist.strings in Resources */,
+				593258F61AB4D28400718B6E /* Images.xcassets in Resources */,
+				597743ED1A1337390078A19A /* JCViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DB48417914EE587900342F2A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59CB92261A19854600E9F399 /* HoG.cpp in Sources */,
+				5956DD3419D7C46B0060A784 /* svm.cpp in Sources */,
+				DB48418E14EE587900342F2A /* main.m in Sources */,
+				DB48419214EE587900342F2A /* JCAppDelegate.mm in Sources */,
+				DB4841A414EE58C200342F2A /* JCDrawView.mm in Sources */,
+				DB4841A714EE598700342F2A /* JCViewController.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		597743EB1A1337390078A19A /* JCViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				597743EC1A1337390078A19A /* en */,
+			);
+			name = JCViewController.xib;
+			sourceTree = "<group>";
+		};
+		DB48418A14EE587900342F2A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DB48418B14EE587900342F2A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DB48419914EE587900342F2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = SmartDraw;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		DB48419A14EE587900342F2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PRODUCT_NAME = SmartDraw;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DB48419C14EE587900342F2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_CXX_LIBRARY = "libc++";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/npbobra/Neraj/Gesture,
+					/Users/Neraj/Desktop/Gesture,
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "simplePaint/SmartDraw-Prefix.pch";
+				INFOPLIST_FILE = "simplePaint/SmartDraw-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = SmartDraw;
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DB48419D14EE587900342F2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_CXX_LIBRARY = "libc++";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/npbobra/Neraj/Gesture,
+					/Users/Neraj/Desktop/Gesture,
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "simplePaint/SmartDraw-Prefix.pch";
+				INFOPLIST_FILE = "simplePaint/SmartDraw-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = SmartDraw;
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DB48417714EE587800342F2A /* Build configuration list for PBXProject "SmartDraw" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB48419914EE587900342F2A /* Debug */,
+				DB48419A14EE587900342F2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB48419B14EE587900342F2A /* Build configuration list for PBXNativeTarget "SmartDraw" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB48419C14EE587900342F2A /* Debug */,
+				DB48419D14EE587900342F2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DB48417414EE587800342F2A /* Project object */;
+}
