@@ -3,7 +3,7 @@
 This is the entire compilable project for the SmartDraw app:
 https://itunes.apple.com/us/app/smartdraw/id979091740?mt=8
 
-This project essentially an OCR app for non-alphanumeric digits. It recognizes common shapes, including circle, diamond, heart, rectangle, triangle, smiley face (not a shape, but just for fun)
+This project is essentially an OCR app for non-alphanumeric digits. It recognizes common shapes, including circle, diamond, heart, rectangle, triangle, smiley face (not a shape, but just for fun).
 
 It also recognizes digits 0-9, to demonstrate the ability to do traditional OCR on top of shapes.
 
@@ -24,4 +24,4 @@ LIBSVM was used to train and classify:
 https://www.csie.ntu.edu.tw/~cjlin/libsvm/
 
 To build the project, simply download and compile. There may be issues linking the opencv2.framework library. To fix this, go to
-the Frameworks tab in the Navigator, and remove opencv2.framework. Then, under the SmartDraw target, add a new framework.
+the Frameworks tab in the Navigator, and remove opencv2.framework. Then, under the SmartDraw target, scroll down to "Linked Frameworks and Libraries". Simply re-add opencv2.framework, and re-compile.
